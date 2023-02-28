@@ -1,3 +1,3 @@
-export function Button() {
-  return <button className={this.props.light ? "light-button" : "dark-button"}>Refresh</button>;
+export function Button(light) {
+  return <button className={light ? "light-button" : "dark-button"}>Refresh</button>;
 }
