@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 // Random‘s job is to store a random color and to use that color to update the screen’s background.
-class Random extends React.Component {
+export function Random() {
   componentDidMount() {
     this.applyColor();
   }
