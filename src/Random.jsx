@@ -41,4 +41,3 @@ export function Random() {
   }
 }
 
-ReactDOM.render(<Random />, document.getElementById("app"));
