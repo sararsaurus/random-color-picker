@@ -1,43 +1,20 @@
 import { useState, useEffect } from "react";
+import { Button } from "./Button";
 
-// Random‘s job is to store a random color and to use that color to update the screen’s background.
+// First step: Random color stores a color that changes when you push a button.
 export function Random() {
-  componentDidMount() {
-    this.applyColor();
-  }
+  // Declaring color and giving it state.
+  const [color, setColor] = useState("");
 
-  componentDidUpdate(prevProps, prevState) {
-    this.applyColor();
-  }
-
-  formatColor(ary) {
-    return "rgb(" + ary.join(", ") + ")";
-  }
-
-  isLight() {
-    const rgb = this.state.color;
-    return rgb.reduce((a, b) => a + b) < 127 * 3;
-  }
-
-  applyColor() {
-    const color = this.formatColor(this.state.color);
+  // Convert lifecycle stuff to useEffect, which will eventually allow us to change the default color when the page loads
+  useEffect(() => {
+    setColor("#000000");
     document.body.style.background = color;
-  }
+  });
 
-  chooseColor() {
-    const random = [];
-    for (let i = 0; i < 3; i++) {
-      random.push(Math.floor(Math.random() * 256));
-    }
-    return random;
-  }
-
-  render() {
-    return (
-      <div>
-        <h1 className={this.isLight() ? "white" : "black"}></h1>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <Button />;
+    </div>
+  );
 }
-
