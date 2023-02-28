@@ -1,3 +1,3 @@
 export function Button(color, setColor) {
-  return <button>Refresh</button>;
+  return <button>New color!</button>;
 }
