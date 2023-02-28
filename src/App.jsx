@@ -1,10 +1,9 @@
-import { Random } from "./Random";
-import { Button } from "./Button";
+import { Home } from "./Home";
 
 function App() {
   return (
     <div>
-      <Random />
+      <Home />
     </div>
   );
 }
