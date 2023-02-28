@@ -3,4 +3,4 @@ This is an adaptation of a [Codecademy](https://www.codecademy.com/courses/learn
 My unique tweaks include:
 
 - A buildout using Vite
-- Updates to the legacy React code
+- Updates to the legacy React code. In particular, the (React docs)[https://beta.reactjs.org/reference/react/Component] now recommend defining components as functions instead of as classes, so I migrated all of the code.
