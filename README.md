@@ -1,3 +1,6 @@
-This project is (very) loosely based on an old [Codecademy](https://www.codecademy.com/courses/learn-react-introduction/projects/random-color) program that helps designers think of new color schemes; the concept is inspired by [Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies), a card-based method first published in 1975 designed to encourage lateral thinking.
+Click a button to generate a random color!
+![](demo.gif)
 
-The Codecademy version defines components as classes rather than as functions and features some other legacy React code. This code is more of a redo than a refactor - it doesn't really use any of the Codecademy code - but it shows the magic of React Hooks + dynamic styling, which allowed me to cut the lines of code nearly in half.
+This project updates an old [Codecademy](https://www.codecademy.com/courses/learn-react-introduction/projects/random-color) project that used legacy code. It's more of a redo than a refactor, but it shows the magic of React Hooks + dynamic styling, which cut the lines of code nearly in half.
+
+Fun fact: random color generators can help overcome creative blocks for designers and artists, much as the card-based '70s method [Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies) encouraged lateral thinking
