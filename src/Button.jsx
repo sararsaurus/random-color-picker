@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 export function Button() {
-  const [active, setActive] = useState(false);
+  // const [active, setActive] = useState(false);
+  const [color, setColor] = useState("#E75ED8");
+  // we took a state that was a boolean (first it's true, then false) but it can be anything - a string, an object. in this case we turned the boolean, which was toggling two separate colors on and off (in a setActive function) into a string that was our default. The most powerful way it can be used is an object. We were able to change it to a random color without any database. React and dynamic CSS are excellent together.
 
   const handleClick = () => {
-    setActive(!active);
+    setColor(randomColor());
   };
 
   // random color generator
@@ -21,7 +23,13 @@ export function Button() {
 
   return (
     <div>
-      <button onClick={handleClick} className={active ? "default" : "success"}>
+      {/* <button onClick={handleClick} className={active ? "default" : "success"}> */}
+      <button
+        onClick={handleClick}
+        style={{
+          backgroundColor: color,
+        }}
+      >
         New color!
       </button>
     </div>
