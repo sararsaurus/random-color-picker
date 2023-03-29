@@ -1,11 +1,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-.default {
-  background-color: blueviolet;
-}
-
-.success {
-  background-color: greenyellow;
-}
